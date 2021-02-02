@@ -1,0 +1,14 @@
+<form [formGroup]="myForm" (ngSubmit)="push()">
+  <div>
+    <input [formControl]="name" name="name" >
+  </div>
+  <div>
+    <input [formControl]="age" name="age">
+  </div>
+  <div>
+    <button>Push</button>
+  </div>
+</form>
+<div *ngFor="let user of users">
+  {{user | json}}
+</div>
